@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css origial.css" />
+               <title>Projeto Base64 e Cdgcesar</title>
+    </head>
+    <body>
+        <form name="formulario">
+            <header>
+                <h1>CODIFICADOR DE CÓDIGOS</h1>
+                        </header>
+
+            <main>
+
+                <label for="qualPadrao">ESCREVA SUA MENSAGEM</label>
+                <br />
+                <input type="text" autocomplete="off" id="texto" />
+                <br />
+
+                <label for="qualPadrao">Escolha seu código</label>
+                <br />
+
+                <select id="escolhas">
+                    <option value="valor0" id="valor0" disabled selected>SELECIONAR</option>
+                    <option value="caesar" id="caesar">Cifra de Caesar</option>
+                    <option value="base64" id="base64">Base 64</option>
+                </select>
+                <br />
+
+                               <div class="incremento" style="display: none;" id="numero">
+                    <p>Chave de Codificação</p>
+                    <input id="numeroIncremento" type="number" default="0" min="1" value="1" />
+                </div>
+
+                <br />
+                <br />
+
+                <div class="buttons">
+                    <input type="radio" name="botoes" id="codificar" value="codificar" checked="checked" />
+                    <button>CODIFICAR</button>
+                                        <br />
+                    <input type="radio" name="botoes" id="decodificar" value="decodificar" checked="checked" />
+                    <button>DECODIFICAR</button>
+                    <br />
+
+                    <button type="submit">ENTER</button>
+                    <br />
+                    <br />
+                </div>
+
+                <label for="qualPadrao">Transcrição:</label>
+                <br />
+               
+                <textarea type="text" id="mensagemFinal" cols="10" rows="2"></textarea>
+            </main>
+           
+        </form>
+
+        <script src="scritp-cesar642.js"></script>
+    </body>
+</html>
+               
